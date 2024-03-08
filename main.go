@@ -154,7 +154,7 @@ func Deploy(p *Project) {
 			slog.Error("docker compose ps -q", err)
 			return
 		}
-		slog.Info("service id", string(out))
+		slog.Info("docker compose", "id", string(out))
 	} else {
 		containerId, err := s.Command("docker", "ps", "-q", "-f", "name="+p.Name).Output()
 		if err != nil {
