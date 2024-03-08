@@ -1,0 +1,6 @@
+Project:
+  - Name: test
+    Repo: git@github.com:xxx/xxxx.git
+    Branch: main
+    Dir: /tmp/xxxx
+    Notify: pushdeer:xxxxx
